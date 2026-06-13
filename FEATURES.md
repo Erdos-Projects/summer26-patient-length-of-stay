@@ -13,7 +13,7 @@
 
 - The diagnostic codes can be simplified by truncating them to the first three characters, such as  "R2740" -> "R27".
 
-- Even after truncating the diagnostic codes, there are stil 2600 possible diagnostic codes. Instead of describing the patients by their individual diagnostic codes (e.g. "R27", "E99"), it may be more useful to group their diagnostic codes (e.g. "F01-F99"), like in https://www.icd10data.com/ICD10CM/Codes.
+- Even after truncating the diagnostic codes, there are stil 2600 possible diagnostic codes. Instead of describing the patients by their individual diagnostic codes (e.g. "R27", "E99"), it may be more useful to group their diagnostic codes (e.g. "F01-F99"), like in https://ftp.cdc.gov/pub/health_statistics/nchs/publications/ICD10CM/2022/icd10cm-tabular-2022-April-1.pdf where codes are grouped by "chapters" or body systems.
 
 ## Table of features
 
