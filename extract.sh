@@ -1,8 +1,8 @@
 #!/bin/bash
 
-mkdir cleaned_data/untarred_data
+mkdir cleaned_data/unzipped_data
 
-for file in cleaned_data/*.tar.gz; do
+for file in cleaned_data/*.zip; do
     echo "Extracting $file..."
-    tar -xzf "$file" -C cleaned_data/untarred_data
+    unzip "$file" -d cleaned_data/unzipped_data
 done
