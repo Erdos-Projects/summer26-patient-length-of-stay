@@ -13,19 +13,13 @@ def extract_data():
     df10 = pd.read_csv("../cleaned_data/unzipped_data/PUDF_base1_3q2017_cleaned.csv", low_memory=False)
     df11 = pd.read_csv("../cleaned_data/unzipped_data/PUDF_base1_2q2017_cleaned.csv", low_memory=False)
     df12 = pd.read_csv("../cleaned_data/unzipped_data/PUDF_base1_1q2017_cleaned.csv", low_memory=False)
-    df13 = pd.read_csv("../cleaned_data/unzipped_data/PUDF_base1_4q2016_cleaned.csv", low_memory=False)
-    df14 = pd.read_csv("../cleaned_data/unzipped_data/PUDF_base1_3q2016_cleaned.csv", low_memory=False)
-    df15 = pd.read_csv("../cleaned_data/unzipped_data/PUDF_base1_2q2016_cleaned.csv", low_memory=False)
-    df16 = pd.read_csv("../cleaned_data/unzipped_data/PUDF_base1_1q2016_cleaned.csv", low_memory=False)
     
-    df = pd.concat([df1, df2, df3, df4, df5, df6, df7, df8, df9, df10, df11, df12, df13, df14, df15, df16], ignore_index=True)
     
-    df = df.drop(columns=['RECORD_ID', 'THCIC_ID', 'PAT_STATE', 'PAT_COUNTRY','DISCHARGE'])
+    df = pd.concat([df1, df2, df3, df4, df5, df6, df7, df8, df9, df10, df11, df12], ignore_index=True)
     
     return df
 
 def extract_data_mini():
     df = pd.read_csv("../cleaned_data/unzipped_data/PUDF_base1_4q2019_cleaned.csv", low_memory=False)
-    df = df.drop(columns=['RECORD_ID', 'THCIC_ID', 'PAT_STATE', 'PAT_COUNTRY','DISCHARGE'])
     
     return df
