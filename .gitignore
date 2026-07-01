@@ -1,0 +1,15 @@
+Cleaned_Data_and_Notebook/unzipped_data
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+
+cleaned_data/unzipped_data
