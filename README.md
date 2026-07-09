@@ -14,4 +14,5 @@ The goal would be to develop a robust model that uses routinely collected hospit
 ## Team members
 - Deepesh Verma, Julian Ong, Katherine Schwind, Ben Lantz, Jake Wellington
 
-
+## Repo Organization
+The main features within the repository can be found within the various folders. The cleaning_notebooks folder contains the various scripts used to clean the raw data from the Texas site. The EDA folder contains various graphs/data exploration, which were generated at various points in the data cleaning process. The fully cleaned data can be found split between the common_testing_data and common_training_data folders. The models used to explore the cleaned data can be found in the models folder.
