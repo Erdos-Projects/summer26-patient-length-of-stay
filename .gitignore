@@ -12,4 +12,5 @@ __pycache__/
 .venv/
 venv/
 
-cleaned_data/unzipped_data
+common_testing_data/unzipped_data
+common_training_data/unzipped_data

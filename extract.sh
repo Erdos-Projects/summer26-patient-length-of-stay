@@ -1,8 +1,15 @@
 #!/bin/bash
 
-mkdir cleaned_data/unzipped_data
+mkdir common_testing_data/unzipped_data
 
-for file in cleaned_data/*.zip; do
+for file in common_testing_data/*.zip; do
     echo "Extracting $file..."
-    unzip "$file" -d cleaned_data/unzipped_data
+    unzip "$file" -d common_testing_data/unzipped_data
+done
+
+mkdir common_training_data/unzipped_data
+
+for file in common_training_data/*.zip; do
+    echo "Extracting $file..."
+    unzip "$file" -d common_training_data/unzipped_data
 done
