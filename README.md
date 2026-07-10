@@ -13,7 +13,7 @@
 5. [Results](#results)
 6. [Future Work](#future-work)
 7. [Description of Repository](#description-of-repository)
-
+8. [How to Run the Models](#run-models)
 ---
 
 ## Introduction
@@ -122,7 +122,7 @@ The table below reports performance across all four metrics for each model. The 
 |---|---|---|---|---|
 | Random Forest | -0.6326 | -0.2979 | -0.5009 | -0.3434 |
 | LightGBM | +0.8962 | -0.8343 | -1.4565 | +0.1245 |
-| XGBoost | — | — | — | — |
+| XGBoost | -6.0761 | -0.6057 | —1.2405 | —0.3075 |
 | CatBoost (MAE-tuned) | +0.8085 | -0.7959 | -1.3287 | +0.2690 |
 | CatBoost (RMSE-tuned) | +0.2122 | -0.4610 | -0.8488 | -0.2309 |
 
@@ -138,7 +138,8 @@ The table below reports performance across all four metrics for each model. The 
 - **Subgroup analysis** by diagnosis category, patient demographics, and facility type to surface potential disparities in levels of care and identify cases warranting targeted model refinement.
 - **Extended feature set exploration**, including procedures performed at admission or insurance/payer type, to assess whether additional admission-level signals can further reduce prediction error.
 - **Live hospital validation** in a real-world environment to assess model performance outside the Texas 2017–2019 context and inform integration into clinical workflows.
-
+- **Modernizing the dataset** to include data from 2020-2026. The difficulty here was legal hurdles that definitely were surmountable.
+- Incorporate **hybrid models** that perform classification tasks and regression tasks to remove outliers more effectively
 ---
 
 ## Description of Repository
@@ -158,3 +159,8 @@ The table below reports performance across all four metrics for each model. The 
 ├── assets/                  # Figures and images for the README
 └── README.md
 ```
+
+---
+
+## How to Run the Models
+Once the repository is cloned, run the command ./extract.sh in the terminal. This should automatically create the files the notebooks will run in the correct place, and the notebooks should run from there.
