@@ -1,6 +1,7 @@
 # Patient Length of Stay (LoS) Prediction
 
 **Team:** Ben Lantz, Julian Ong, Katherine Schwind, Deepesh Verma, Jake Wellington
+**Advisor:** Alexandria Wheeler
 
 ---
 
@@ -32,7 +33,7 @@ Our primary stakeholders — patients, hospital systems and administrators, and 
 
 Models were evaluated using **Root Mean Squared Error (RMSE)**, **Mean Absolute Error (MAE)**, **Huber Loss**, and **Quantile Loss**. 
 
-We find it useful to briefly explain Quantile Loss in the context of our project. Quantile Loss penalizes over- and under-predictions asymmetrically, making it particularly well-suited for the right-skewed LoS distribution where a small number of patients have very long stays. By tuning the quantile parameter for prolonged stays (Los>=30 days), the model can be trained conservatively — predicting slightly longer stays — which is preferable in a clinical context where under-allocating resources carries greater risk than over-allocating them.
+We find it useful to briefly explain Quantile Loss in the context of our project. Quantile Loss penalizes over- and under-predictions asymmetrically, making it particularly well-suited for the right-skewed LoS distribution where a small number of patients have very long stays. By tuning the quantile parameter for prolonged stays (LoS>=30 days), the model can be trained conservatively — predicting slightly longer stays — which is preferable in a clinical context where under-allocating resources carries greater risk than over-allocating them.
 
 A model was considered clinically and operationally viable only if it achieved meaningful improvement relative to the baseline across all four metrics.
 
@@ -44,7 +45,7 @@ A model was considered clinically and operationally viable only if it achieved m
 
 The dataset was obtained from the **Texas Department of State Health Services (DSHS)** public data portal. It consists of over **7 million hospitalizations** from Texas spanning **2017–2019**, with more than 160 features per record. 
 
-Data is available from **2010-2025**, but due to accessibility constraints and differences overtime in the features reported, we chose only to focus on **2017-2019**.Because the data is publicly accessible, it is included in a compressed form in this repository under `data/`.
+Data is available from **2010-2025**, but due to accessibility constraints and differences overtime in the features reported, we chose only to focus on **2017-2019**. Because the data is publicly accessible, it is included in a compressed form in this repository under `data/`.
 
 ### Feature Selection
 
