@@ -1,6 +1,7 @@
 # Patient Length of Stay (LoS) Prediction
 
 **Team:** Ben Lantz, Julian Ong, Katherine Schwind, Deepesh Verma, Jake Wellington
+
 **Advisor:** Alexandria Wheeler
 
 ---
