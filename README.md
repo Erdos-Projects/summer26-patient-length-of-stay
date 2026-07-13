@@ -18,7 +18,7 @@
 
 ## Introduction
 
-In 2024, there were 35.6 million hospital admissions in the United States `[(AHA)](https://www.aha.org/statistics/fast-facts-us-hospitals)`, with an average length of stay (LoS) of 6 days `[(OECD)](https://www.oecd.org/en/data/indicators/length-of-hospital-stay.html#indicator-chart)`. Prolonged LoS negatively affects both patients and hospital staff, leading to avoidable health complications and increased stress respectively. The ability to accurately predict LoS could enable more effective resource planning and enhanced operational efficiency, improving inpatient outcomes while relieving pressure on healthcare workers `[(Rojas-García et al., 2018)](https://doi.org/10.1111/hex.12619)`.
+In 2024, there were 35.6 million hospital admissions in the United States [(AHA)](https://www.aha.org/statistics/fast-facts-us-hospitals), with an average length of stay (LoS) of 6 days [(OECD)](https://www.oecd.org/en/data/indicators/length-of-hospital-stay.html#indicator-chart). Prolonged LoS negatively affects both patients and hospital staff, leading to avoidable health complications and increased stress respectively. The ability to accurately predict LoS could enable more effective resource planning and enhanced operational efficiency, improving inpatient outcomes while relieving pressure on healthcare workers [(Rojas-García et al., 2018)](https://doi.org/10.1111/hex.12619).
 
 The goal of this project is to develop a predictive model to determine LoS using **only admission-level data**, enabling better resource allocation and patient care before a patient's hospital course even begins.
 
@@ -65,7 +65,7 @@ Raw ICD-10 diagnosis codes were retained but **aggregated into ICD-10 chapters**
 Four features were engineered to capture healthcare access patterns that may influence care and LoS:
 
 - **Urban/Rural Flag:** Patient and provider ZIP codes were mapped against a reference list of rural and urban counties to assign each hospitalization a binary urban/rural indicator.
-- **Patient Coordinates:** The geographic coordinates of each patient's residential ZIP code, using `[pgeocode](https://pgeocode.readthedocs.io/en/latest/)`, a Python library for postal code-based geolocation.
+- **Patient Coordinates:** The geographic coordinates of each patient's residential ZIP code, using [pgeocode](https://pgeocode.readthedocs.io/en/latest/), a Python library for postal code-based geolocation.
 - **Provider Coordinates:** The geographic coordinates of each providers address.
 - **Patient-to-Hospital Distance:** The geographic distance between each patient's residential ZIP code and the hospital location was calculated using GoogleAPI and pgeocode.
 
