@@ -77,11 +77,20 @@ Four features were engineered to capture healthcare access patterns that may inf
 
 Our EDA investigated the distribution of LoS across the dataset and correlations between admission-level features and LoS. Key findings informed both our feature engineering choices and our modeling strategy.
 
-LoS Distribution
-*Figure 1: Distribution of patient length of stay across all hospitalizations.*
+Below we show the full LoS distribution data for the entire dataset. One can see how difficult it is to interpret the data due to extreme outliers.
+
+LoS Full Distribution
+![LoS Full Distribution](assets/los_distribution_full_plot.png)
+
+We found it would be better to show a subset of the data, sans extreme outliers. Below we show the 99th precentile of patient LoS.
+
+LoS 99th Distribution
+![LoS 99th Percentile Distribution](assets/los_distribution_99th_plot.png)
+
+To investigate how features might be correlated, which later informed our feature engineering, we looked at a feature heatmap, as shown below.
 
 Feature Correlations
-*Figure 2: Correlation heatmap of selected admission features with LoS.*
+![Correlation Heatmap](assets/correlation_heatmap.png)
 
 ---
 
