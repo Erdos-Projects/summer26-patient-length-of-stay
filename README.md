@@ -18,7 +18,7 @@
 
 ## Introduction
 
-In 2024, there were 35.6 million hospital admissions in the United States (AHA), with an average length of stay (LoS) of 6 days (OECD). Prolonged LoS negatively affects both patients and hospital staff, leading to avoidable health complications and increased stress respectively. The ability to accurately predict LoS could enable more effective resource planning and enhanced operational efficiency, improving inpatient outcomes while relieving pressure on healthcare workers.
+In 2024, there were 35.6 million hospital admissions in the United States `[(AHA)](https://www.aha.org/statistics/fast-facts-us-hospitals)`, with an average length of stay (LoS) of 6 days `[(OECD)](https://www.oecd.org/en/data/indicators/length-of-hospital-stay.html#indicator-chart)`. Prolonged LoS negatively affects both patients and hospital staff, leading to avoidable health complications and increased stress respectively. The ability to accurately predict LoS could enable more effective resource planning and enhanced operational efficiency, improving inpatient outcomes while relieving pressure on healthcare workers `[(Rojas-García et al., 2018)](https://doi.org/10.1111/hex.12619)`.
 
 The goal of this project is to develop a predictive model to determine LoS using **only admission-level data**, enabling better resource allocation and patient care before a patient's hospital course even begins.
 
