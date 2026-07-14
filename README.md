@@ -50,7 +50,7 @@ A model was considered clinically and operationally viable only if it achieved m
 
 The dataset was obtained from the **Texas Department of State Health Services (DSHS)** public data portal. It consists of over **7 million hospitalizations** from Texas spanning **2017–2019**, with more than 160 features per record. 
 
-Data is available from **2010-2025**, but due to accessibility constraints and differences overtime in the features reported, we chose only to focus on **2017-2019**.Because the data is publicly accessible, it is included in a compressed form in this repository under `data/`.
+Data is available from **2010-2025**, but due to accessibility constraints and differences overtime in the features reported, we chose only to focus on **2017-2019**. Because the data is publicly accessible, it is included in a compressed form in this repository under `common_training_data/` and `common_testing_data/`.
 
 ### Feature Selection
 
