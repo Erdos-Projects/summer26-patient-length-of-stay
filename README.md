@@ -191,4 +191,4 @@ The table below reports performance across all four metrics for each model. The 
 ---
 ## How to Run the Models
 
-Once the repository is cloned, run the command ./extract.sh in the terminal. This should automatically create the files the notebooks will run in the correct place, and the notebooks should run from the
+Once the repository is cloned, run the command ./extract.sh in the terminal. This should automatically create the files the notebooks will run in the correct place, and the notebooks should run from there
